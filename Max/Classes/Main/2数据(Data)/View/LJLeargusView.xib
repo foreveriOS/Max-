@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tk3-At-kA5" customClass="LJLeargusView">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oGI-Gh-89d">
+                    <rect key="frame" x="0.0" y="0.0" width="202" height="113"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJw-H2-dkH">
+                    <rect key="frame" x="0.0" y="113" width="202" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近比赛20小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LV-8l-6rN">
+                    <rect key="frame" x="4" y="131" width="144" height="19"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000场" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gci-6l-Kmf">
+                    <rect key="frame" x="148" y="131" width="50" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="evD-4z-Zya"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qJw-H2-dkH" firstAttribute="centerX" secondItem="oGI-Gh-89d" secondAttribute="centerX" id="3VS-S3-ftf"/>
+                <constraint firstAttribute="trailing" secondItem="gci-6l-Kmf" secondAttribute="trailing" constant="4" id="3dw-8A-HY8"/>
+                <constraint firstAttribute="trailing" secondItem="oGI-Gh-89d" secondAttribute="trailing" id="EaU-FH-Aty"/>
+                <constraint firstItem="oGI-Gh-89d" firstAttribute="top" secondItem="tk3-At-kA5" secondAttribute="top" id="FSh-7A-Q8F"/>
+                <constraint firstItem="gci-6l-Kmf" firstAttribute="leading" secondItem="2LV-8l-6rN" secondAttribute="trailing" id="LLy-Ga-VWj"/>
+                <constraint firstItem="oGI-Gh-89d" firstAttribute="leading" secondItem="tk3-At-kA5" secondAttribute="leading" id="LTj-K1-V8Q"/>
+                <constraint firstItem="2LV-8l-6rN" firstAttribute="centerY" secondItem="gci-6l-Kmf" secondAttribute="centerY" id="OpZ-4j-NQK"/>
+                <constraint firstItem="2LV-8l-6rN" firstAttribute="leading" secondItem="tk3-At-kA5" secondAttribute="leading" constant="4" id="RAx-ND-wsa"/>
+                <constraint firstItem="qJw-H2-dkH" firstAttribute="leading" secondItem="oGI-Gh-89d" secondAttribute="leading" id="aWS-BT-COb"/>
+                <constraint firstItem="qJw-H2-dkH" firstAttribute="top" secondItem="oGI-Gh-89d" secondAttribute="bottom" id="eqm-I8-bJT"/>
+                <constraint firstItem="qJw-H2-dkH" firstAttribute="trailing" secondItem="oGI-Gh-89d" secondAttribute="trailing" id="fd6-hb-QjT"/>
+                <constraint firstItem="gci-6l-Kmf" firstAttribute="height" secondItem="tk3-At-kA5" secondAttribute="height" multiplier="0.125" id="i94-Q1-Nvb"/>
+                <constraint firstItem="oGI-Gh-89d" firstAttribute="height" secondItem="tk3-At-kA5" secondAttribute="height" multiplier="0.75" id="iBE-eF-vZW"/>
+                <constraint firstItem="2LV-8l-6rN" firstAttribute="height" secondItem="gci-6l-Kmf" secondAttribute="height" id="qtk-M1-vRW"/>
+                <constraint firstAttribute="bottom" secondItem="gci-6l-Kmf" secondAttribute="bottom" id="zZe-Mt-McP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconView" destination="oGI-Gh-89d" id="RjJ-Yc-8ax"/>
+                <outlet property="numberView" destination="gci-6l-Kmf" id="8cg-O4-Kch"/>
+                <outlet property="timeView" destination="2LV-8l-6rN" id="bAK-ML-Rfr"/>
+                <outlet property="titleView" destination="qJw-H2-dkH" id="Jvg-TJ-fB5"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="37"/>
+        </view>
+    </objects>
+</document>

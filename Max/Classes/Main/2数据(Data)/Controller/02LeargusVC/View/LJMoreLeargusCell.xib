@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LJMoreLeargusCell" id="gTV-IL-0wX" customClass="LJMoreLeargusCell">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="163"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qlP-Op-SMm">
+                        <rect key="frame" x="0.0" y="0.0" width="213" height="122"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRA-1Y-iAE">
+                        <rect key="frame" x="5" y="147" width="113" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRF-YW-Pgg">
+                        <rect key="frame" x="0.0" y="122" width="213" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFq-WZ-Ssh">
+                        <rect key="frame" x="118" y="147" width="95" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qlP-Op-SMm" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.75" id="17Y-XP-d6e"/>
+                <constraint firstItem="MRF-YW-Pgg" firstAttribute="top" secondItem="qlP-Op-SMm" secondAttribute="bottom" id="5sc-l1-DbM"/>
+                <constraint firstItem="MRF-YW-Pgg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Js-Jf-xhy"/>
+                <constraint firstAttribute="trailing" secondItem="tFq-WZ-Ssh" secondAttribute="trailing" id="FPf-Ae-aRa"/>
+                <constraint firstItem="tFq-WZ-Ssh" firstAttribute="height" secondItem="MRF-YW-Pgg" secondAttribute="height" id="NHp-64-baq"/>
+                <constraint firstAttribute="bottom" secondItem="tFq-WZ-Ssh" secondAttribute="bottom" id="NpO-je-Ios"/>
+                <constraint firstItem="pRA-1Y-iAE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="XM7-PC-j8B"/>
+                <constraint firstItem="tFq-WZ-Ssh" firstAttribute="leading" secondItem="pRA-1Y-iAE" secondAttribute="trailing" id="Xbl-Z7-3RG"/>
+                <constraint firstItem="pRA-1Y-iAE" firstAttribute="centerY" secondItem="tFq-WZ-Ssh" secondAttribute="centerY" id="djD-JW-ahJ"/>
+                <constraint firstItem="pRA-1Y-iAE" firstAttribute="height" secondItem="tFq-WZ-Ssh" secondAttribute="height" id="h1S-gL-dPa"/>
+                <constraint firstAttribute="trailing" secondItem="qlP-Op-SMm" secondAttribute="trailing" id="jJS-xK-hXL"/>
+                <constraint firstAttribute="trailing" secondItem="MRF-YW-Pgg" secondAttribute="trailing" id="jce-dR-1Lm"/>
+                <constraint firstItem="qlP-Op-SMm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mtK-CJ-0Sw"/>
+                <constraint firstItem="qlP-Op-SMm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="q5R-ll-N9H"/>
+                <constraint firstItem="pRA-1Y-iAE" firstAttribute="width" secondItem="tFq-WZ-Ssh" secondAttribute="width" multiplier="1.2" id="sps-qV-xIZ"/>
+            </constraints>
+            <size key="customSize" width="213" height="163"/>
+            <connections>
+                <outlet property="iconView" destination="qlP-Op-SMm" id="reM-0o-DfO"/>
+                <outlet property="matchCountView" destination="tFq-WZ-Ssh" id="zR0-yU-Pw8"/>
+                <outlet property="timeView" destination="pRA-1Y-iAE" id="sP8-Mj-AOf"/>
+                <outlet property="titleView" destination="MRF-YW-Pgg" id="AOc-k8-7AE"/>
+            </connections>
+            <point key="canvasLocation" x="189.5" y="166.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

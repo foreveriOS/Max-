@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="125" id="KGk-i7-Jjw" customClass="FourthSectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MS6-td-7op" customClass="PlayersView">
+                        <rect key="frame" x="-2" y="8" width="345" height="74"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNy-vK-tzs">
+                        <rect key="frame" x="-2" y="82" width="345" height="34"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_icon_arrow@2x" translatesAutoresizingMaskIntoConstraints="NO" id="oCm-Hp-aOR">
+                                <rect key="frame" x="300" y="5" width="40" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ZHg-qZ-MLG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看全部" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT5-YP-cWY">
+                                <rect key="frame" x="190" y="5" width="100" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="nIS-k5-Zk7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oCm-Hp-aOR" secondAttribute="trailing" id="86Z-KY-Bfu"/>
+                            <constraint firstItem="sT5-YP-cWY" firstAttribute="leading" secondItem="oCm-Hp-aOR" secondAttribute="trailing" constant="3" id="9AA-hJ-FV5"/>
+                            <constraint firstItem="sT5-YP-cWY" firstAttribute="height" secondItem="oCm-Hp-aOR" secondAttribute="height" id="Bam-ki-rDu"/>
+                            <constraint firstItem="oCm-Hp-aOR" firstAttribute="leading" secondItem="xNy-vK-tzs" secondAttribute="leading" id="Bdg-l6-M0h"/>
+                            <constraint firstItem="oCm-Hp-aOR" firstAttribute="leading" secondItem="sT5-YP-cWY" secondAttribute="trailing" constant="10" id="LlN-TM-YlQ"/>
+                            <constraint firstItem="oCm-Hp-aOR" firstAttribute="leading" secondItem="sT5-YP-cWY" secondAttribute="trailing" id="NVu-Id-o4k"/>
+                            <constraint firstAttribute="trailing" secondItem="oCm-Hp-aOR" secondAttribute="trailing" constant="5" id="QKW-DO-fHg"/>
+                            <constraint firstItem="sT5-YP-cWY" firstAttribute="centerY" secondItem="oCm-Hp-aOR" secondAttribute="centerY" id="UvQ-Hx-aut"/>
+                            <constraint firstAttribute="bottom" secondItem="oCm-Hp-aOR" secondAttribute="bottom" constant="5" id="Z4R-ba-pvy"/>
+                            <constraint firstItem="sT5-YP-cWY" firstAttribute="centerY" secondItem="oCm-Hp-aOR" secondAttribute="centerY" id="dbN-LP-egQ"/>
+                            <constraint firstItem="oCm-Hp-aOR" firstAttribute="top" secondItem="xNy-vK-tzs" secondAttribute="top" constant="5" id="gbq-OG-vIb"/>
+                            <constraint firstItem="sT5-YP-cWY" firstAttribute="height" secondItem="oCm-Hp-aOR" secondAttribute="height" id="kqg-TA-Jmc"/>
+                            <constraint firstItem="oCm-Hp-aOR" firstAttribute="leading" secondItem="sT5-YP-cWY" secondAttribute="trailing" id="mWr-5b-cQf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9AA-hJ-FV5"/>
+                                <exclude reference="Bam-ki-rDu"/>
+                                <exclude reference="dbN-LP-egQ"/>
+                                <exclude reference="86Z-KY-Bfu"/>
+                                <exclude reference="Bdg-l6-M0h"/>
+                                <exclude reference="NVu-Id-o4k"/>
+                                <exclude reference="mWr-5b-cQf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xNy-vK-tzs" firstAttribute="top" secondItem="MS6-td-7op" secondAttribute="bottom" id="7QB-ck-Uil"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xNy-vK-tzs" secondAttribute="trailing" constant="-10" id="Hdj-7g-sUm"/>
+                    <constraint firstItem="MS6-td-7op" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="IRL-sH-pN0"/>
+                    <constraint firstItem="MS6-td-7op" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.6" id="NjT-HQ-7QP"/>
+                    <constraint firstItem="MS6-td-7op" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="Oeg-X1-LI2"/>
+                    <constraint firstItem="MS6-td-7op" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-10" id="OnG-Az-dPF"/>
+                    <constraint firstItem="xNy-vK-tzs" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="aO1-p7-PPq"/>
+                    <constraint firstItem="xNy-vK-tzs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-10" id="cZn-ZD-E03"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="allView" destination="xNy-vK-tzs" id="Cz8-5V-pIs"/>
+                <outlet property="playersView" destination="MS6-td-7op" id="q7A-Q6-gO2"/>
+            </connections>
+            <point key="canvasLocation" x="191.5" y="285.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_icon_arrow@2x" width="16" height="16"/>
+    </resources>
+</document>

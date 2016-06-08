@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZMS-9X-mgo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--数据-->
+        <scene sceneID="jl3-f2-jus">
+            <objects>
+                <viewController id="EDB-I6-Ig9" customClass="DataViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mQV-AI-06l"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Oq-bW-1uh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vwf-L0-q3X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="数据" id="mMM-k8-nTZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFT-Ul-31x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="500"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="eNl-ne-VcG">
+            <objects>
+                <navigationController id="ZMS-9X-mgo" customClass="MainNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Dfw-Sf-QL9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i4R-9g-eR6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EDB-I6-Ig9" kind="relationship" relationship="rootViewController" id="5Pu-8X-6UL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTG-eo-Cvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="412"/>
+        </scene>
+    </scenes>
+</document>

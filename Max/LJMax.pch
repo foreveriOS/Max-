@@ -1,0 +1,23 @@
+//
+//  LJMax.pch
+//  Max+
+//
+//  Created by MJ on 16/5/25.
+//  Copyright © 2016年 LYH. All rights reserved.
+//
+
+#ifndef LJMax_pch
+#define LJMax_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+
+#import "LJCommon.h"
+
+
+
+
+#endif /* LJMax_pch */

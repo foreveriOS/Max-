@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="ZZh-ng-8fU" customClass="ThreadTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZZh-ng-8fU" id="0u7-uY-Slm">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fs8-5x-7FQ" customClass="LJSecondScrollView">
+                        <rect key="frame" x="-2" y="-2" width="346" height="108"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fs8-5x-7FQ" secondAttribute="trailing" constant="-10" id="SZ7-nR-UCl"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Fs8-5x-7FQ" secondAttribute="bottom" constant="-10" id="TRa-Op-Vib"/>
+                    <constraint firstItem="Fs8-5x-7FQ" firstAttribute="top" secondItem="0u7-uY-Slm" secondAttribute="topMargin" constant="-10" id="VMd-hL-Ap7"/>
+                    <constraint firstItem="Fs8-5x-7FQ" firstAttribute="leading" secondItem="0u7-uY-Slm" secondAttribute="leadingMargin" constant="-10" id="yhw-oZ-7hY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="scrollView" destination="Fs8-5x-7FQ" id="uWO-z1-5RT"/>
+            </connections>
+            <point key="canvasLocation" x="213" y="328.5"/>
+        </tableViewCell>
+    </objects>
+</document>
